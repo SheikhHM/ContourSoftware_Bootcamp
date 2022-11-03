@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+<head>
+<title>Second Task</title>
+<script>
+function add(){
+var a,b;
+a=parseInt(document.getElementById("first").value);
+b=parseInt(document.getElementById("second").value);
+
+
+let arr = ["f1","f2","f3","f4","f5","f6"]
+
+    for(let i=a;i<=b;i++){
+
+        document.getElementById("answer").value += (" " + arr[i]);
+    }
+}
+
+ 
+</script>
+</head>
+<body>
+    <h1>My Second Task</h1>   
+Enter the First number : <input id="first">
+<br>
+<br>    
+Enter the Second number: <input id="second">
+<br>
+<br>
+<button onclick="add()">Add</button>
+<input id="answer">
+</body>
+</html>
+

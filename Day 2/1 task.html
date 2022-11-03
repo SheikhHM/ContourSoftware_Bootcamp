@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+<title>First Task</title>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+</script>
+</head>
+<body>
+    <h1>My First Task</h1> 
+    <h2>Add two number using text box </h2>   
+Enter the First number : <input id="first">
+<br>
+<br>
+Enter the Second number: <input id="second">
+<br>
+<br>
+<button onclick="add()">Add</button>
+<input id="answer">
+</body>
+</html>
+

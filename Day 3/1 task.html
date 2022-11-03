@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+<title>First Task</title>
+<script>
+function int(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+
+if (a > b) {
+    document.getElementById("answer").value= ("The Greater Number is : " + a );
+  } else if (a < b) {
+    document.getElementById("answer").value= ("The Greater Number is : " + b );
+}
+}
+</script>
+</head>
+<body>
+    <h1>My First Task</h1> 
+    <h2>Find The Greater Number</h2>   
+Enter the First number : <input id="first">
+<br>	
+<br>
+Enter the Second number: <input id="second">
+<br>
+<br>
+<button onclick="int()">Result</button>
+<input id="answer">
+</body>
+</html>
+

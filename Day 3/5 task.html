@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+<head>
+<title>Fifth Task</title>
+<script>
+	
+	function word(){
+	var str = (document.getElementById("first").value);
+	var str1="";
+	for(var i = 0 ; i < str.length; i++){
+		
+		if(!(str[i]== " ")){
+
+			str1 += str[i];
+		}	
+	
+	}
+	document.getElementById("answer").value=str1
+}
+</script>
+</head>
+<body>
+    <h1>My Fifth Task</h1> 
+    <h2>Remove Spaces</h2>   
+Please Some text here : <input id="first">
+<br>	
+<br>
+<button onclick="word()">Result</button>
+<input id="answer">
+</body>
+</html>
+
+

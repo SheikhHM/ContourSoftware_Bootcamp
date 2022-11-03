@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<head>
+<title>Third Task</title>
+<script>
+	function word(){
+	var str = (document.getElementById("first").value);
+	
+	var reversestr="";
+	var count=0;
+	for(var i = str.length/2 ; i>=0; i--){
+		// console.log(str[i]);
+		if(str[i]== str[(str.length-1)-i]){
+			document.getElementById("answer").value= ("It is a Palindrome");
+	}	
+	else{
+		
+		document.getElementById("answer").value= ("It is not a Palindrome");	
+	}	
+	}
+	
+}
+</script>
+</head>
+<body>
+    <h1>My Third Task</h1> 
+    <h2>Find The Word is Palindrome or Not..</h2>   
+Please Enter Any Word : <input id="first">
+<br>	
+<br>
+<button onclick="word()">Result</button>
+<input id="answer">
+</body>
+</html>
+
+

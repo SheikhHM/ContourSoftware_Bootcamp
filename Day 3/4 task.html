@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+<title>Fourth Task</title>
+<script>
+	function word(){
+	var str = (document.getElementById("first").value);
+	var count=0;
+	for(var i = 0 ; i < str.length; i++){
+		
+		if(str[i]== " "){
+			count++;
+		}	
+	
+	}
+	document.getElementById("answer").value=count
+}
+</script>
+</head>
+<body>
+    <h1>My Fourth Task</h1> 
+    <h2>Space Count</h2>   
+Please Some text here : <input id="first">
+<br>	
+<br>
+<button onclick="word()">Result</button>
+<input id="answer">
+</body>
+</html>
+
+

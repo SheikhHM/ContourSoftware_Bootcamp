@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+<title>Second Task</title>
+<script>
+function int(){
+var a;
+a=Number(document.getElementById("first").value);
+
+if (a %2== 0) {
+    document.getElementById("answer").value= ("The Even Number is : " + a );
+  } else {
+    document.getElementById("answer").value= ("The Odd Number is : " + a );
+}
+}
+</script>
+</head>
+<body>
+    <h1>My Second Task</h1> 
+    <h2>Find The Even And Odd Number</h2>   
+Enter the number : <input id="first">
+<br>	
+<br>
+<button onclick="int()">Result</button>
+<input id="answer">
+</body>
+</html>
+
+
